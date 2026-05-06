@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburg Crime & Safety | LexingtonCrime.com</title>
+  <meta name="description" content="Crime data, safety trends, and neighborhood guide for the Hamburg area in Lexington, Kentucky.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { brand: { 50:'#eff6ff', 100:'#dbeafe', 500:'#3b82f6', 600:'#2563eb', 700:'#1d4ed8', 800:'#1e40af', 900:'#1e3a5f' } } } }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNXXV79CFF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-NNXXV79CFF");
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="/" class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <span class="text-xl font-bold text-brand-900">Lexington<span class="text-brand-600">Crime</span>.com</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/" class="text-gray-600 hover:text-brand-600 transition">Home</a>
+          <a href="/neighborhoods/" class="text-brand-600 font-medium">Neighborhoods</a>
+          <a href="/crime-map.html" class="text-gray-600 hover:text-brand-600 transition">Crime Map</a>
+          <a href="/reports.html" class="text-gray-600 hover:text-brand-600 transition">Reports</a>
+          <a href="/safety-tips.html" class="text-gray-600 hover:text-brand-600 transition">Safety Tips</a>
+          <a href="/about.html" class="text-gray-600 hover:text-brand-600 transition">About</a>
+          <a href="/alerts.html" class="bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition text-sm font-medium">Get Alerts</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <nav class="text-sm text-gray-500">
+        <a href="/" class="hover:text-brand-600">Home</a>
+        <span class="mx-2">›</span>
+        <a href="/neighborhoods/" class="hover:text-brand-600">Neighborhoods</a>
+        <span class="mx-2">›</span>
+        <span class="text-gray-800 font-medium">Hamburg</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-green-100 to-green-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-5xl">🏬</span>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Hamburg</h1>
+          <p class="text-gray-600 mt-1">Lexington, Kentucky</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-3 mt-6">
+        <span class="bg-white/80 px-3 py-1 rounded-full text-sm font-medium text-gray-700">🏗️ Master-Planned</span>
+        <span class="bg-white/80 px-3 py-1 rounded-full text-sm font-medium text-gray-700">🛍️ Hamburg Pavilion</span>
+        <span class="bg-white/80 px-3 py-1 rounded-full text-sm font-medium text-gray-700">🛣️ I-75 / I-64 Access</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid lg:grid-cols-3 gap-10">
+
+      <!-- Main Content -->
+      <div class="lg:col-span-2 space-y-10">
+
+        <!-- About -->
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">About Hamburg</h2>
+          <div class="bg-white rounded-xl border p-6 text-gray-600 leading-relaxed space-y-4">
+            <p>Hamburg is Lexington's largest master-planned community, developed on the city's east side beginning in the early 2000s. The area is anchored by the Hamburg Pavilion, a massive retail and entertainment center with over 2 million square feet of shopping, dining, and services — making it one of the largest open-air retail destinations in the state.</p>
+            <p>The neighborhood offers a wide range of housing options, from starter townhomes and apartments to single-family homes and upscale developments. Its location at the intersection of I-75 and I-64 provides easy access to the rest of the Bluegrass region, while still being just minutes from downtown Lexington. Schools, parks, and medical facilities are all within the Hamburg footprint.</p>
+            <p>Hamburg continues to expand with new residential phases and commercial development, making it one of Lexington's fastest-growing areas and a popular choice for families and young professionals alike.</p>
+          </div>
+        </section>
+
+        <!-- Crime Map -->
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Crime Map — Hamburg Area</h2>
+          <div class="bg-white rounded-xl border overflow-hidden">
+            <iframe src="https://www.spotcrime.info/#38.0100,-84.4200" 
+                    width="100%" height="450" frameborder="0" 
+                    style="border:0;" allowfullscreen loading="lazy"
+                    title="Hamburg Crime Map"></iframe>
+          </div>
+          <p class="text-xs text-gray-400 mt-2">Map centered on Hamburg neighborhood. Zoom and pan to explore nearby areas.</p>
+        </section>
+
+        <!-- Safety Tips -->
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Safety Tips for Hamburg</h2>
+          <div class="bg-white rounded-xl border p-6 space-y-4">
+            <div class="flex gap-3">
+              <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">🛍️</div>
+              <div>
+                <h4 class="font-semibold">Shopping Area Awareness</h4>
+                <p class="text-gray-500 text-sm mt-1">Hamburg Pavilion draws large crowds. Keep bags close, lock purchases in the trunk, and be aware of your surroundings in parking lots — especially during holiday seasons.</p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">🚗</div>
+              <div>
+                <h4 class="font-semibold">Traffic & Road Safety</h4>
+                <p class="text-gray-500 text-sm mt-1">Sir Barton Way and Man o' War Boulevard see heavy traffic. Use extra caution at intersections and watch for pedestrians crossing between retail areas.</p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">🏠</div>
+              <div>
+                <h4 class="font-semibold">Community Vigilance</h4>
+                <p class="text-gray-500 text-sm mt-1">Get to know your neighbors and report suspicious activity. Many Hamburg subdivisions have HOAs and active community groups that help maintain safety.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="space-y-6">
+
+        <!-- Quick Facts -->
+        <div class="bg-white rounded-xl border p-6">
+          <h3 class="font-bold text-lg mb-4">Quick Facts</h3>
+          <dl class="space-y-3 text-sm">
+            <div class="flex justify-between">
+              <dt class="text-gray-500">Area Type</dt>
+              <dd class="font-medium">Master-Planned / Suburban</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-gray-500">Established</dt>
+              <dd class="font-medium">Early 2000s</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-gray-500">Walkability</dt>
+              <dd class="font-medium text-yellow-600">Moderate</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-gray-500">Housing</dt>
+              <dd class="font-medium">Wide Range</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Alert CTA -->
+        <div class="bg-brand-600 rounded-xl p-6 text-white">
+          <h3 class="font-bold text-lg mb-2">Get Hamburg Alerts</h3>
+          <p class="text-blue-100 text-sm mb-4">Receive free email alerts when crime is reported in the Hamburg neighborhood.</p>
+          <a href="/alerts.html" class="block text-center bg-white text-brand-700 px-4 py-2 rounded-lg font-semibold hover:bg-blue-50 transition text-sm">Sign Up Free</a>
+        </div>
+
+        <!-- Other Neighborhoods -->
+        <div class="bg-white rounded-xl border p-6">
+          <h3 class="font-bold text-lg mb-4">Other Neighborhoods</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/neighborhoods/chevy-chase.html" class="text-brand-600 hover:text-brand-700">Chevy Chase</a></li>
+            <li><a href="/neighborhoods/downtown.html" class="text-brand-600 hover:text-brand-700">Downtown Lexington</a></li>
+            <li><a href="/neighborhoods/ashland-park.html" class="text-brand-600 hover:text-brand-700">Ashland Park</a></li>
+            <li><a href="/neighborhoods/andover.html" class="text-brand-600 hover:text-brand-700">Andover</a></li>
+            <li><a href="/neighborhoods/idle-hour.html" class="text-brand-600 hover:text-brand-700">Idle Hour</a></li>
+            <li><a href="/neighborhoods/bell-court.html" class="text-brand-600 hover:text-brand-700">Bell Court</a></li>
+            <li><a href="/neighborhoods/masterson-station.html" class="text-brand-600 hover:text-brand-700">Masterson Station</a></li>
+          </ul>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm">
+      <p>&copy; 2026 LexingtonCrime.com. All rights reserved.</p>
+      <p class="mt-2 md:mt-0">Crime data powered by <a href="https://www.spotcrime.com" class="text-brand-500 hover:text-brand-400">SpotCrime</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

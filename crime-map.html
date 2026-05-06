@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crime Map | LexingtonCrime.com</title>
+  <meta name="description" content="Interactive Lexington KY crime map - view recent crime incidents, explore Lexington police crime map, check crime near me in Lexington KY. Real-time Fayette County crime data.">
+  <link rel="canonical" href="https://lexingtoncrime.com/crime-map.html">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Crime Map | LexingtonCrime.com">
+  <meta property="og:description" content="Interactive Lexington KY crime map - view recent crime incidents, explore Lexington police crime map, check crime near me in Lexington KY. Real-time Fayette County crime data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lexingtoncrime.com/crime-map.html">
+  <meta property="og:site_name" content="LexingtonCrime.com">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Crime Map | LexingtonCrime.com">
+  <meta name="twitter:description" content="Interactive Lexington KY crime map - view recent crime incidents, explore Lexington police crime map, check crime near me in Lexington KY. Real-time Fayette County crime data.">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Crime Map | LexingtonCrime.com",
+    "url": "https://lexingtoncrime.com/crime-map.html",
+    "description": "Interactive Lexington KY crime map showing recent crime incidents and neighborhood safety data",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "LexingtonCrime.com",
+      "url": "https://lexingtoncrime.com"
+    }
+  }
+  </script>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { brand: { 50:'#eff6ff', 100:'#dbeafe', 500:'#3b82f6', 600:'#2563eb', 700:'#1d4ed8', 800:'#1e40af', 900:'#1e3a5f' } } } }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNXXV79CFF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-NNXXV79CFF");
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="/" class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <span class="text-xl font-bold text-brand-900">Lexington<span class="text-brand-600">Crime</span>.com</span>
+        </a>
+        <!-- Desktop nav -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/" class="text-gray-600 hover:text-brand-600 transition">Home</a>
+          <a href="/neighborhoods/" class="text-gray-600 hover:text-brand-600 transition">Neighborhoods</a>
+          <a href="/crime-map.html" class="text-brand-600 font-medium">Crime Map</a>
+          <a href="/reports.html" class="text-gray-600 hover:text-brand-600 transition">Reports</a>
+          <a href="/safety-tips.html" class="text-gray-600 hover:text-brand-600 transition">Safety Tips</a>
+          <a href="/about.html" class="text-gray-600 hover:text-brand-600 transition">About</a>
+          <a href="/alerts.html" class="bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition text-sm font-medium">Get Alerts</a>
+        </div>
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
+      <div class="px-4 py-3 space-y-2">
+        <a href="/" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-50">Home</a>
+        <a href="/neighborhoods/" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-50">Neighborhoods</a>
+        <a href="/crime-map.html" class="block px-3 py-2 rounded-lg text-brand-600 bg-brand-50 font-medium">Crime Map</a>
+        <a href="/reports.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-50">Reports</a>
+        <a href="/safety-tips.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-50">Safety Tips</a>
+        <a href="/about.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-50">About</a>
+        <a href="/alerts.html" class="block px-3 py-2 rounded-lg bg-brand-600 text-white text-center font-medium">Get Alerts</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Map Header -->
+  <section class="bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <h1 class="text-3xl font-bold text-gray-900">Lexington Crime Map</h1>
+      <p class="text-gray-500 mt-2">Interactive map showing recent crime incidents across Lexington, KY. Powered by SpotCrime.</p>
+      <div class="flex flex-wrap gap-4 mt-6">
+        <div class="flex items-center gap-2 bg-blue-50 px-3 py-1.5 rounded-lg text-sm">
+          <svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span class="text-brand-700 font-medium">Up-to-date data from Lexington Police</span>
+        </div>
+        <div class="flex items-center gap-2 bg-green-50 px-3 py-1.5 rounded-lg text-sm">
+          <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span class="text-green-700 font-medium">Click markers for incident details</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-width Map -->
+  <section>
+    <iframe src="https://www.spotcrime.info/#38.0406,-84.5037" 
+            width="100%" height="700" frameborder="0" 
+            style="border:0; display:block;" allowfullscreen loading="lazy"
+            title="Lexington KY Crime Map"></iframe>
+  </section>
+
+  <!-- Info Section -->
+  <section class="bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-xl p-6 border">
+          <h3 class="font-bold text-lg mb-2">📊 Up-to-Date Data</h3>
+          <p class="text-gray-500 text-sm">Access the latest crime statistics and incident reports from the Lexington Police Department.</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6 border">
+          <h3 class="font-bold text-lg mb-2">🏘️ Neighborhood Insights</h3>
+          <p class="text-gray-500 text-sm">Compare safety data across different Lexington neighborhoods to find the best fit for you.</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6 border">
+          <h3 class="font-bold text-lg mb-2">✅ Informed Decisions</h3>
+          <p class="text-gray-500 text-sm">Use crime data to make confident decisions about living in or visiting Lexington.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Content Section -->
+  <section class="py-10 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="prose max-w-none text-sm text-gray-600">
+        <h2 class="text-xl font-bold text-gray-800 mb-4">Interactive Lexington KY Crime Map</h2>
+        <p class="mb-4">
+          Our comprehensive Lexington crime map interactive provides real-time access to crime incidents across Lexington KY and Fayette County. This Lexington police crime map aggregates data from official sources to help residents search for "crime near me Lexington KY" and understand local safety patterns.
+        </p>
+        <p>
+          Whether you're researching a specific neighborhood, checking recent activity in your area, or exploring the broader crime map Fayette County data, our interactive mapping tool provides the most current information available. Use this Lexington KY crime map to make informed decisions about safety and stay aware of crime trends in your community.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm">
+      <p>&copy; 2026 LexingtonCrime.com. All rights reserved.</p>
+      <p class="mt-2 md:mt-0">Crime data powered by <a href="https://www.spotcrime.com" class="text-brand-500 hover:text-brand-400">SpotCrime</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

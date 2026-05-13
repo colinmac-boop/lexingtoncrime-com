@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | LexingtonCrime.com</title>
+  <title>About LexingtonCrime.com — Lexington KY Crime Data & Reporting | LexingtonCrime.com</title>
   <meta name="description" content="About LexingtonCrime.com - your source for Lexington crime data, Lexington KY crime statistics, and SpotCrime Lexington information. Learn about our mission and data sources.">
   <meta name="keywords" content="about lexingtoncrime, lexington crime data source, spotcrime lexington, lexington ky crime statistics, lexington police data, fayette county crime data">
   <link rel="canonical" href="https://lexingtoncrime.com/about.html">
@@ -36,7 +36,27 @@
   }
   </script>
   
-  <script src="https://cdn.tailwindcss.com"></script>
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "LexingtonCrime.com",
+        "item": "https://lexingtoncrime.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://lexingtoncrime.com/about.html"
+      }
+    ]
+  }
+  </script>
+<script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: { extend: { colors: { brand: { 50:'#eff6ff', 100:'#dbeafe', 500:'#3b82f6', 600:'#2563eb', 700:'#1d4ed8', 800:'#1e40af', 900:'#1e3a5f' } } } }

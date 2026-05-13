@@ -116,14 +116,30 @@
           </div>
           <span class="text-xl font-bold text-brand-900">Lexington<span class="text-brand-600">Crime</span>.com</span>
         </a>
-        <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden md:flex items-center space-x-6">
           <a href="/" class="text-gray-600 hover:text-brand-600 transition">Home</a>
-          <a href="/neighborhoods/" class="text-brand-600 font-medium">Neighborhoods</a>
           <a href="/crime-map.html" class="text-gray-600 hover:text-brand-600 transition">Crime Map</a>
-          <a href="/reports.html" class="text-gray-600 hover:text-brand-600 transition">Reports</a>
-          <a href="/safety-tips.html" class="text-gray-600 hover:text-brand-600 transition">Safety Tips</a>
-          <a href="/about.html" class="text-gray-600 hover:text-brand-600 transition">About</a>
+          <a href="/neighborhoods/" class="text-gray-600 hover:text-brand-600 transition">Neighborhoods</a>
+          <div class="relative group">
+            <button class="text-gray-600 hover:text-brand-600 transition inline-flex items-center" aria-haspopup="true">Data <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 12 12"><path d="M3 4l3 4 3-4z"/></svg></button>
+            <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute right-0 mt-1 w-64 bg-white border border-gray-100 rounded-lg shadow-lg py-2 transition">
+              <a href="/data/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700">Data Hub</a>
+              <a href="/kentucky-violent-crime.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700">Kentucky Crime Rate</a>
+              <a href="/reports.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700">Crime Reports</a>
+              <a href="/crime-data.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700">Crime Data Sources</a>
+              <a href="/homicide-investigations.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700">Homicide Investigations</a>
+            </div>
+          </div>
+          <div class="relative group">
+            <button class="text-gray-600 hover:text-brand-600 transition inline-flex items-center" aria-haspopup="true">Safety <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 12 12"><path d="M3 4l3 4 3-4z"/></svg></button>
+            <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute right-0 mt-1 w-64 bg-white border border-gray-100 rounded-lg shadow-lg py-2 transition">
+              <a href="/safety-tips.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700">Safety Tips</a>
+              <a href="/most-wanted.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700">Most Wanted</a>
+              <a href="/home-security.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700">Home Security</a>
+            </div>
+          </div>
           <a href="/blog/" class="text-gray-600 hover:text-brand-600 transition">Blog</a>
+          <a href="/about.html" class="text-gray-600 hover:text-brand-600 transition">About</a>
           <a href="/alerts.html" class="bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition text-sm font-medium">Get Alerts</a>
         </div>
       </div>

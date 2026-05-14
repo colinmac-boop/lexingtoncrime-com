@@ -69,7 +69,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <nav class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="bg-white shadow-sm sticky top-0 z-50" id="lc-nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <a href="/" class="flex items-center space-x-2">
@@ -104,8 +104,33 @@
           <a href="/about.html" class="text-gray-600 hover:text-brand-600 transition">About</a>
           <a href="/alerts.html" class="bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition text-sm font-medium">Get Alerts</a>
         </div>
+        <button id="lc-mobile-toggle" type="button" class="md:hidden p-2 text-gray-600 hover:text-brand-600" aria-label="Open menu" aria-expanded="false">
+          <svg class="w-6 h-6 lc-mobile-open" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg class="w-6 h-6 hidden lc-mobile-close" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="lc-mobile-menu" class="md:hidden hidden border-t border-gray-100 py-3 space-y-1">
+        <a href="/" class="block px-2 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Home</a>
+        <a href="/crime-map.html" class="block px-2 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Crime Map</a>
+        <a href="/neighborhoods/" class="block px-2 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Neighborhoods</a>
+        <div class="pt-2 pb-1 px-2 text-xs uppercase tracking-wide text-gray-400 font-semibold">Data</div>
+        <a href="/data/" class="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Data Hub</a>
+        <a href="/kentucky-violent-crime.html" class="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Kentucky Crime Rate</a>
+        <a href="/reports.html" class="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Crime Reports</a>
+        <a href="/crime-data.html" class="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Crime Data Sources</a>
+        <a href="/homicide-investigations.html" class="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Homicide Investigations</a>
+        <div class="pt-2 pb-1 px-2 text-xs uppercase tracking-wide text-gray-400 font-semibold">Safety</div>
+        <a href="/safety-tips.html" class="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Safety Tips</a>
+        <a href="/most-wanted.html" class="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Most Wanted</a>
+        <a href="/home-security.html" class="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Home Security</a>
+        <div class="border-t border-gray-100 mt-2 pt-2 space-y-1">
+          <a href="/blog/" class="block px-2 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">Blog</a>
+          <a href="/about.html" class="block px-2 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-700 rounded">About</a>
+          <a href="/alerts.html" class="block mt-2 bg-brand-600 text-white text-center px-4 py-2 rounded-lg hover:bg-brand-700 transition font-medium">Get Alerts</a>
+        </div>
       </div>
     </div>
+    <script>(function(){var b=document.getElementById('lc-mobile-toggle');var m=document.getElementById('lc-mobile-menu');if(!b||!m)return;b.addEventListener('click',function(){var open=!m.classList.contains('hidden');if(open){m.classList.add('hidden');b.setAttribute('aria-expanded','false');b.querySelector('.lc-mobile-open').classList.remove('hidden');b.querySelector('.lc-mobile-close').classList.add('hidden');}else{m.classList.remove('hidden');b.setAttribute('aria-expanded','true');b.querySelector('.lc-mobile-open').classList.add('hidden');b.querySelector('.lc-mobile-close').classList.remove('hidden');}});})();</script>
   </nav>
 
   <header class="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-16">
